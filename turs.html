@@ -285,26 +285,21 @@
 <section class="my-16">
   <div class="container">
     <div class="flex flex-col gap-10">
-      <a href="" class="flex flex-row max-lg:flex-col shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] transition-all duration-300 easy-out active:shadow-[0_10px_20px_rgba(7,101,47,_0.7)] relative">
-        <div  >
-          <img src="img/slider/slider2.jpg" class=" h-[400px] w-[1500px] object-cover max-lg:w-full max-lg:h-full" alt="">
+      <a href="tur.html" class="flex flex-row max-lg:flex-col shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] transition-all duration-300 easy-out active:shadow-[0_10px_20px_rgba(7,101,47,_0.7)] relative">
+        <div  class="image-zoom-container">
+          <img src="img/slider/slider2.jpg" class=" h-[400px] w-[1500px] object-cover max-lg:w-full max-lg:h-full mainImage relative"  >
+         <div class="zoom-result" ></div>
         </div>
         <div>
           <div class="p-5 ">
             <h4 class="text-[20px]">Lorem, ipsum.</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed nam cum quaerat magnam. Blanditiis quis accusantium quam corrupti praesentium sequi, esse natus at voluptatem, voluptates dolore consectetur atque impedit inventore expedita eaque rerum nisi ipsa dolorum saepe ipsam. Odio?</p>
-           <button class="btn btn-primary absolute right-0 bottom-0 text-[18px] px-7   text-white rounded-none uppercase bg-primary transition-all  duration-300 easy-out hover:bg-secondary  max-lg:hover:bg-primary border-none">Bizimle iletişime geçin</button> 
+           <button class="btn btn-primary absolute right-0 bottom-0 text-[18px] px-7 max-lg:hidden text-white rounded-none uppercase bg-primary transition-all  duration-300 easy-out hover:bg-secondary  max-lg:hover:bg-primary border-none">Bizimle iletişime geçin</button> 
           </div>
         </div>
       </a>
    <div>
-    <a class="magnifier-thumb-wrapper" href="http://en.wikipedia.org/wiki/File:Starry_Night_Over_the_Rhone.jpg">
-        <img id="thumb" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/200px-Starry_Night_Over_the_Rhone.jpg">
-    </a>
-    <div class="magnifier-preview" id="preview" style="width: 200px; height: 133px">Starry Night Over The Rhone<br>by Vincent van Gogh</div>
 </div>
-
-
     </div>
   </div>
 </section>
@@ -482,15 +477,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script type="text/javascript">
-var evt = new Event(),
-    m = new Magnifier(evt);
-    m.attach({
-    thumb: '#thumb',
-    large: 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/400px-Starry_Night_Over_the_Rhone.jpg',
-    largeWrapper: 'preview'
-});
-</script>
+   
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>

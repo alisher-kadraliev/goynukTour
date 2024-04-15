@@ -1,20 +1,20 @@
 @font-face {
-   font-family: 'Gloss';
-    src: url('/fonts/Gloss.ttf') format('truetype');
+  font-family: "Gloss";
+  src: url("/fonts/Gloss.ttf") format("truetype");
 }
 @font-face {
-   font-family: 'Morn';
-    src: url('/fonts/Morn.ttf') format('truetype');
+  font-family: "Morn";
+  src: url("/fonts/Morn.ttf") format("truetype");
 }
 
 @layer base {
   body {
     font-family: "Roboto", sans-serif;
   }
-  .second-font{
+  .second-font {
     font-family: "Gloss", sans-serif;
   }
-  .third-font{
+  .third-font {
     font-family: "Morn", sans-serif;
   }
 }
@@ -154,116 +154,114 @@
 
 /* swiper */
 
-
 /*THANKYOU*/
 
-
 .thanks-wrap {
-    background: #FFFFFF;
-    padding: 30px;
-    margin: 0 auto 10px;
-    display: none;
-    max-width: 320px;
+  background: #ffffff;
+  padding: 30px;
+  margin: 0 auto 10px;
+  display: none;
+  max-width: 320px;
 }
 
 .checkmark {
-    max-width: 300px;
-    margin: 0 auto;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 0;
-    -webkit-animation: dash 2s ease-in-out;
-    animation: dash 2s ease-in-out;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 2s ease-in-out;
+  animation: dash 2s ease-in-out;
 }
 
 .spin {
-    -webkit-animation: spin 2s;
-    animation: spin 2s;
-    transform-origin: 50% 50%;
+  -webkit-animation: spin 2s;
+  animation: spin 2s;
+  transform-origin: 50% 50%;
 }
 
 h2 {
-    -webkit-animation: text 1s;
-    animation: text 1s;
+  -webkit-animation: text 1s;
+  animation: text 1s;
 }
 
 @-webkit-keyframes dash {
-    0% {
-        stroke-dashoffset: 1000;
-    }
+  0% {
+    stroke-dashoffset: 1000;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes dash {
-    0% {
-        stroke-dashoffset: 1000;
-    }
+  0% {
+    stroke-dashoffset: 1000;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @-webkit-keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes text {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes text {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 .mg-70 {
-    margin: 70px 0px;
-    display: flex;
-    justify-content: center;
+  margin: 70px 0px;
+  display: flex;
+  justify-content: center;
 }
-@media (min-width: 1200px){
-    .h2, h2 {
-        font-size: 2rem;
-    }
+@media (min-width: 1200px) {
+  .h2,
+  h2 {
+    font-size: 2rem;
+  }
 }
-@media (max-width: 768px){
-    footer {
-        margin-bottom: 0px;
-    }
+@media (max-width: 768px) {
+  footer {
+    margin-bottom: 0px;
+  }
 }
 /*THANKYOU*/
 
@@ -893,65 +891,34 @@ h2 {
 }
 
 /* whatsapp */
-
-
-.magnifier-thumb-wrapper {
+/* zoom image */
+.image-zoom-container {
     position: relative;
-    display: block;
-    top: 0;
-    left: 0
+    border: 1px solid #ddd; /* Optional border for containers */
 }
 
-.magnifier-lens {
-    position: absolute;
-    border: solid 1px #ccc;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    overflow: hidden
-}
-
-.magnifier-loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: solid 1px #ccc;
-    color: #fff;
-    text-align: center;
-    background: transparent;
-    background: rgba(50, 50, 50, 0.5);
-    z-index: 1000;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)";
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)
-}
-
-.magnifier-loader-text {
-    font: 13px Arial;
-    margin-top: 10px
-}
-
-.magnifier-large {
-    position: absolute;
-    z-index: 100
-}
-
-.magnifier-preview {
-    padding: 0;
+.mainImage {
     width: 100%;
-    height: 150px;
-    position: relative;
-    overflow: hidden
+    height: auto;
+    cursor: zoom-in;
 }
 
-.magnifier-preview img {
+.zoom-result {
     position: absolute;
+    border: 1px solid #000;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    left: 105%; /* Right side of the main image */
     top: 0;
-    left: 0
+    display: none; /* Hidden by default */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.opaque {
-    opacity: .5;
-    filter: alpha(opacity=50);
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50)
+.image-zoom-container:hover .zoom-result {
+    display: block;
 }
 
+/* zoom image */
